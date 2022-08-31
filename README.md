@@ -1,2 +1,3 @@
-# mockServiceWorkerFIMLM2022
+# API superheroes
+
 Unit #4 of ReactJS course
