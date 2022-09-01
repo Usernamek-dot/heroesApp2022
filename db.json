@@ -5,7 +5,7 @@
       "top": "1",
       "name": "SPIDER MAN",
       "powers": "Strength - Spider's Web",
-      "premiere": "August 1962",
+      "premiere": "september 1962",
       "description": "Spider-Man, sometimes translated as Spider-Man, is an American character created by Stan Lee and Steve Ditko,? and introduced in Amazing Fantasy No. 15, published by Marvel Comics in August 1962",
       "publisher": "Marvel Comic",
       "type": "heroes-marvel",
@@ -438,7 +438,7 @@
       "description": "The Martian Manhunter (J'onn J'onzz) is a DC Comics superhero. He first appeared in Detective Comics No. 225 (November 1955), in the short story The Strange Experiment of Dr. Erdel written by Joseph Samachson and illustrated by Joe Certa",
       "publisher": "DC Comics",
       "type": "heroes-dc",
-      "image": ""
+      "image": "https://firebasestorage.googleapis.com/v0/b/superheroes-1869d.appspot.com/o/dc%2Fmartian-j_oon.jpg?alt=media&token=de048b9a-27c1-4aab-862d-cfd47da3b285"
     }
   ]
 }
