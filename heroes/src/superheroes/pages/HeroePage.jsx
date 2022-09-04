@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import heroesApi from "../../api/Api";
+import "animate.css";
 
 export const HeroePage = () => {
   const { heroId } = useParams();
