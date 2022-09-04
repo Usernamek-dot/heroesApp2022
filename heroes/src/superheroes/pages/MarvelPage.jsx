@@ -15,13 +15,47 @@ export const MarvelPage = () => {
     }
   };
   return (
-    <div>
-      {getHeroes.map((heroe) => (
-        <>
-          <div key={heroe.id}></div>
-          <h1> {heroe.name} </h1>
-        </>
-      ))}
-    </div>
+    <>
+      <h1 className="font-medium leading-tight text-5xl mt-0 mb-2 text-blue-600">
+        Top 20
+      </h1>
+      <h4 className="font-medium leading-tight text-2xl mt-0 mb-2 text-blue-600">
+        <span classNameName="text-red-500">Marvel</span> Super heroes
+      </h4>
+
+      <div classNameName="grid sm:grid-cols-4 gap-4">
+        {getHeroes.map((heroe) => (
+          <div key={heroe.id}>
+            <div className="flex justify-center">
+              <div className="rounded-lg shadow-lg bg-white max-w-sm">
+                <img
+                  className="rounded-t-lg"
+                  src={heroe.image}
+                  alt={heroe.name}
+                />
+
+                <div className="p-6">
+                  <h5 className="text-gray-900 text-xl font-medium mb-2">
+                    {heroe.name}
+                  </h5>
+                  <p className="text-gray-700 text-base mb-4">
+                    {heroe.description}
+                  </p>
+                  <button
+                    type="button"
+                    className=" inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
+                  >
+                    See more...
+                  </button>
+                </div>
+                <div class="py-3 px-6 border-t border-gray-300 text-gray-600">
+                  {heroe.powers}
+                </div>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </>
   );
 };
