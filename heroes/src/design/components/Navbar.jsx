@@ -11,7 +11,7 @@ export const Navbar = () => {
   };
 
   return (
-    <nav className="bg-gray-900">
+    <nav className="sticky top-0 z-50 bg-gray-900 text-gray-200 shadow-lg">
       <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
         <div className="relative flex items-center justify-between h-20">
           <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
@@ -24,29 +24,29 @@ export const Navbar = () => {
               <div className="flex space-x-4">
                 <NavLink
                   className={({ isActive }) =>
-                    `text-white block px-3 py-2 rounded-md text-base font-medium ${
-                      isActive ? "text-yellow-500" : ""
+                    `font-semibold text-white block px-3 py-2 rounded-md text-base font-medium  ${
+                      isActive ? "text-slate-800" : ""
                     }`
                   }
                   to="/home"
                 >
-                  home
+                  Dashboard
                 </NavLink>
                 <NavLink
                   className={({ isActive }) =>
-                    `bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-medium ${
-                      isActive ? "text-yellow-500" : ""
+                    `opacity-60 hover:opacity-80 focus:opacity-80 p-0 text-white block px-3 py-2 rounded-md text-base font-medium ${
+                      isActive ? "text-slate-600" : ""
                     }`
                   }
                   to="/marvel"
                 >
-                  MARVEL
+                  Marvel
                 </NavLink>
 
                 <NavLink
                   className={({ isActive }) =>
-                    `bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-medium ${
-                      isActive ? "text-yellow-500" : ""
+                    `opacity-60 hover:opacity-80 focus:opacity-80 p-0 text-white block px-3 py-2 rounded-md text-base font-medium ${
+                      isActive ? "text-slate-600" : ""
                     }`
                   }
                   to="/dc"
@@ -59,40 +59,40 @@ export const Navbar = () => {
           <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
             <button
               onClick={onLogout}
-              className="bg-red-600 py-2 px-6 rounded-lg font-bold text-white hover:text-yellow-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+              className="inline-block px-6 py-2.5 bg-gray-800 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-gray-900 hover:shadow-lg focus:bg-gray-900 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-gray-900 active:shadow-lg transition duration-150 ease-in-out"
             >
               Exit 👉
             </button>
           </div>
         </div>
       </div>
-
+      {/* mobile */}
       <div className="sm:hidden" id="mobile-menu">
-        <div className="px-2 pt-2 pb-3 space-y-2">
+        <div className="px-2 pt-2 pb-3 space-y-2 text-center">
           <NavLink
             className={({ isActive }) =>
-              `bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-medium ${
-                isActive ? "text-yellow-500" : ""
+              `font-semibold text-white block px-3 py-2 rounded-md text-base font-medium  ${
+                isActive ? "text-slate-800" : ""
               }`
             }
             to="/home"
           >
-            home
+            Dashboard
           </NavLink>
           <NavLink
             className={({ isActive }) =>
-              `bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-medium ${
-                isActive ? "text-yellow-500" : ""
+              `opacity-60 hover:opacity-80 focus:opacity-80 p-0 text-white block px-3 py-2 rounded-md text-base font-medium ${
+                isActive ? "text-slate-600" : ""
               }`
             }
             to="/marvel"
           >
-            MARVEL
+            Marvel
           </NavLink>
           <NavLink
             className={({ isActive }) =>
-              `bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-medium ${
-                isActive ? "text-yellow-500" : ""
+              `opacity-60 hover:opacity-80 focus:opacity-80 p-0 text-white block px-3 py-2 rounded-md text-base font-medium ${
+                isActive ? "text-slate-600" : ""
               }`
             }
             to="/dc"
