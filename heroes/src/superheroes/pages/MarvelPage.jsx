@@ -26,12 +26,14 @@ export const MarvelPage = () => {
   }
   return (
     <>
-      <h1 className="font-medium leading-tight text-5xl mt-0 mb-2 text-blue-600">
-        Top 20
-      </h1>
-      <h4 className="font-medium leading-tight text-2xl mt-0 mb-2 text-blue-600">
-        <span classNameName="text-red-500">Marvel</span> Super heroes
-      </h4>
+      <div className="text-center">
+        <h1 className="font-medium leading-tight text-5xl mt-2 mb-4 text-slate-600">
+          Top <span className="text-red-500">20</span>
+        </h1>
+        <h4 className="font-medium leading-tight text-2xl mt-0 mb-2 text-slate-600">
+          Marvel Super heroes
+        </h4>
+      </div>
       <div classNameName="grid sm:grid-cols-4 gap-4">
         {getHeroes.map((heroe) => (
           <div key={heroe.id}>
