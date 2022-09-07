@@ -8,7 +8,11 @@ Unit #4 of ReactJS course
 Description:
 This is a super app created in Reactjs course 2022.
 Its contents  are super heroes.
-Conected to fake api https://app-heroes-heroku.herokuapp.com/superheroes
+
+---
+Site:  https://super-hero-fimlm.netlify.app/home
+
+Api:   https://app-heroes-heroku.herokuapp.com/superheroes
 
 ---
 Resources Used
