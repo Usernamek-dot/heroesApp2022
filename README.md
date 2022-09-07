@@ -10,7 +10,7 @@ This is a super app created in Reactjs course 2022.
 Its contents  are super heroes.
 
 ---
-Site:  https://super-hero-fimlm.netlify.app/home
+Site:  https://super-hero-fimlm.netlify.app
 
 Api:   https://app-heroes-heroku.herokuapp.com/superheroes
 
