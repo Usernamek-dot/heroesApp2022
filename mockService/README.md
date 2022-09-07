@@ -1,6 +1,4 @@
-# API superheroes
-
-Unit #4 of ReactJS course
+# Superheroes project
 
 Postman : https://www.postman.com/downloads/
 
